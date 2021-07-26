@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-.newsletter-form legend + label {
+.newsletter-form .field-group {
   margin-top: var(--g-row);
 }
 
@@ -22,7 +22,8 @@
   margin-top: 0;
 }
 
-.newsletter-form label {
+.newsletter-form label,
+.newsletter-label--apply {
   display: block;
   font-size: var(--font-size-1);
   font-weight: 600;
