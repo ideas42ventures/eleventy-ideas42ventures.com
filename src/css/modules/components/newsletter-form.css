@@ -68,7 +68,7 @@ input {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.field--connected-btn > input .btn {
+.field--connected-btn > #submit-btn {
   --border-radius: 0 0 8px 8px;
   width: 100%;
 }
@@ -89,7 +89,7 @@ input {
     --border-radius: 8px 0 0 8px;
   }
 
-  .field--connected-btn > input .btn {
+  .field--connected-btn > #submit-btn {
     --border-radius: 0 8px 8px 0;
     --padding-h: 1em;
     padding: var(--padding-v) var(--padding-h);
