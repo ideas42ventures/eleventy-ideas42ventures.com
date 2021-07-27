@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-.newsletter-form legend + label {
+.newsletter-form .field-group {
   margin-top: var(--g-row);
 }
 
@@ -22,7 +22,8 @@
   margin-top: 0;
 }
 
-.newsletter-form label {
+.newsletter-form label,
+.newsletter-label--apply {
   display: block;
   font-size: var(--font-size-1);
   font-weight: 600;
@@ -49,12 +50,13 @@ input {
   width: 100%;
 }
 
-.input--full ~ .btn {
+.input--full ~ .btn,
+.btn--full {
   margin-top: var(--g-row);
   width: 100%;
 }
 
-.field--connected-btn input {
+.field--connected-btn > .input {
   --border-radius: 8px 8px 0 0;
   background-color: rgba(255, 255, 255, 0.08);
   border: 0;
@@ -63,11 +65,11 @@ input {
   flex: 1;
 }
 
-.field--connected-btn input::placeholder {
+.field--connected-btn > .input::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.field--connected-btn .btn {
+.field--connected-btn > #submit-btn {
   --border-radius: 0 0 8px 8px;
   width: 100%;
 }
@@ -84,11 +86,11 @@ input {
 }
 
 @media (min-width: 40.625em) {
-  .field--connected-btn input {
+  .field--connected-btn > .input {
     --border-radius: 8px 0 0 8px;
   }
 
-  .field--connected-btn .btn {
+  .field--connected-btn > #submit-btn {
     --border-radius: 0 8px 8px 0;
     --padding-h: 1em;
     padding: var(--padding-v) var(--padding-h);
