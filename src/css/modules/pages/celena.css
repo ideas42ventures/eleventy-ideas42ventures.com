@@ -73,6 +73,13 @@ body#celena {
   padding: 0 30px;
 }
 
+#celena .container-half {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
 #celena .columns-4 {
   display: grid;
   grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
@@ -86,6 +93,16 @@ body#celena {
 #celena .columns-2 {
   display: grid;
   grid-template-columns: 1fr 40px 1fr;
+}
+
+#celena .columns-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#celena .gap {
+  display: grid;
+  grid-template-rows: 30px;
 }
 
 #celena .columns-2 + .columns-2 {
@@ -507,7 +524,6 @@ body#celena {
 #celena .form-footer {
   text-align: center;
   color: var(--color-gray-quiet);
-  margin-top: 30px;
 }
 
 @media (max-width: 699px) {
