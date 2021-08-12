@@ -67,6 +67,7 @@ figcaption {
 .card__body--bordered {
   border-top: 1px solid rgba(var(--color-not-quite-white-rgb), 0.8);
   padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .card__body ul,

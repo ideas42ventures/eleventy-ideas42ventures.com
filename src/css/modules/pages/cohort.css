@@ -139,3 +139,58 @@
     margin-left: 1.5rem;
   }
 }
+
+/* Fast Company Banner */
+
+.article__cta {
+  --border-radius: 0;
+  --padding-v: 0.9rem;
+  --pos-left: 0;
+  --pos-top: 0;
+  align-items: center;
+  background-color: white;
+  border-radius: 100px;
+  border: 1px solid var(--color-not-quite-white);
+  box-shadow: var(--shadow-card);
+  color: var(--color-text-primary);
+  display: inline-flex;
+  justify-content: space-between;
+  left: var(--pos-left);
+  line-height: 1.6;
+  margin: var(--padding-v) auto var(--margin-bottom, 0);
+  padding: var(--padding-v) 1.4rem;
+  text-decoration: none;
+  top: var(--pos-top);
+  transform: translateY(var(--translate-y, 0));
+  transition: 0.1s ease;
+  width: auto;
+  z-index: 2;
+}
+
+.article__cta .btn__arrow {
+  color: var(--color-accent-active);
+  margin-top: 0.4rem;
+  transition: 0.12s ease;
+}
+
+.article__cta span {
+  padding: 0 0.25rem;
+}
+
+.article__cta:hover {
+  border-color: var(--color-accent-active);
+  color: var(--color-accent-active);
+}
+
+.article__cta:focus {
+  border-radius: var(--border-radius);
+}
+
+.article__cta:focus .btn__arrow {
+  color: white;
+}
+
+.article__cta:hover .btn__arrow,
+.article__cta:focus .btn__arrow {
+  transform: translate3d(5px, 0, 0);
+}

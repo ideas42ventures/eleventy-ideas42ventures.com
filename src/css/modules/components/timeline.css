@@ -68,11 +68,11 @@
 }
 
 .timeline__month:first-child {
-  --num-rows: 5;
+  --num-rows: 10;
 }
 
 .timeline__month:last-child {
-  --num-rows: 25;
+  --num-rows: 20;
 }
 
 .timeline__month:last-child::before {
@@ -203,35 +203,39 @@
   margin-top: 0.25rem;
 }
 
-/* Sep 30 - Oct 18 */
+/* Sep 13 - Oct 10 */
 .timeline__date:nth-child(1) {
-  --pos: 8;
+  --pos: 4;
 }
 
+/* Q&A Session - Temp Hidden */
 .timeline__date:nth-child(2) {
   --pos: 18;
+  display: none;
 }
 
+/* Q&A Session - Temp Hidden */
 .timeline__date:nth-child(3) {
   --pos: 24;
+  display: none;
 }
 
 .timeline__date:nth-child(4) {
-  --pos: 35;
+  --pos: 25;
 }
 
 .timeline__range:nth-child(1) {
-  --pos: 10 / 37;
+  --pos: 6 / 27;
 }
 
 .timeline__event:nth-child(1) {
-  --pos: 18 / 31;
+  --pos: 12 / 27;
 }
-/* end Sep 30 - Oct 18 */
+/* end Sep 13 - Oct 10 */
 
-/* Nov 6 - Nov 15 */
+/* Oct 29 - Nov 15 */
 .timeline__date:nth-child(5) {
-  --pos: 46;
+  --pos: 40;
 }
 
 .timeline__date:nth-child(6) {
@@ -239,65 +243,81 @@
 }
 
 .timeline__range:nth-child(2) {
-  --pos: 48 / 57;
+  --pos: 41 / 57;
 }
 
 .timeline__event:nth-child(2) {
-  --pos: 48 / 61;
+  --pos: 46 / 57;
 }
-/* end Nov 6 - Nov 15 */
+/* end Oct 29 - Nov 15 */
 
-/* Dec 7 - Dec 18 */
+/* Dec 6 - Dec 15 */
 .timeline__date:nth-child(7) {
-  --pos: 81;
+  --pos: 74;
 }
 
 .timeline__date:nth-child(8) {
-  --pos: 92;
+  --pos: 83;
 }
 
 .timeline__range:nth-child(3) {
-  --pos: 83 / 94;
+  --pos: 75 / 85;
 }
 
 .timeline__event:nth-child(3) {
-  --pos: 85 / 98;
+  --pos: 78 / 83;
 }
-/* end Dec 7 - Dec 18 */
+/* end Dec 6 - Dec 15 */
 
-/* Jan 4 - Jan 8 */
+/* Jan 3 - Jan 7 */
 .timeline__date:nth-child(9) {
-  --pos: 112;
+  --pos: 99;
 }
 
 .timeline__date:nth-child(10) {
-  --pos: 117;
+  --pos: 105;
 }
 
 .timeline__range:nth-child(4) {
-  --pos: 114 / 119;
+  --pos: 101 / 107;
 }
 
 .timeline__event:nth-child(4) {
-  --pos: 113 / 126;
+  --pos: 102 / 105;
 }
-/* end Jan 4 - Jan 8 */
+/* end Jan 3 - Jan 7 */
 
 /* Offers */
 .timeline__date:nth-child(11) {
-  --pos: 127;
+  --pos: 120;
 }
 
 .timeline__marker:nth-child(5) {
-  --pos: 128 / 128;
+  --pos: 121 / 121;
 }
 
 .timeline__event:nth-child(5) {
-  --pos: 128 / 150;
+  --pos: 120 / 129;
   padding-right: 1.25rem;
   position: relative;
 }
 /* end Offers */
+
+/* Start */
+.timeline__date:nth-child(12) {
+  --pos: 130;
+}
+
+.timeline__marker:nth-child(6) {
+  --pos: 131 / 131;
+}
+
+.timeline__event:nth-child(6) {
+  --pos: 130 / 135;
+  padding-right: 1.25rem;
+  position: relative;
+}
+/* end Start */
 
 @media (min-width: 57.5em) {
   .timeline {
@@ -310,7 +330,7 @@
 
   .timeline__months {
     display: grid;
-    grid-template-columns: 0.25fr repeat(4, 1fr);
+    grid-template-columns: 0.6fr repeat(5, 1fr);
   }
 
   .timeline__months::after {
@@ -387,29 +407,37 @@
   }
 
   .timeline__event:nth-child(1) {
-    --pos: 15 / 32;
+    --pos: 4 / 28;
   }
 
   .timeline__event:nth-child(2) {
-    --pos: 42 / 63;
+    --pos: 41 / 57;
   }
 
   .timeline__event:nth-child(3) {
-    --pos: 74 / 103;
+    --pos: 70 / 91;
   }
 
   .timeline__event:nth-child(4) {
-    --pos: 104 / 126;
+    --pos: 94 / 115;
   }
 
   .timeline__event:nth-child(5) {
-    --pos: 128 / 135;
-    padding-right: 0;
-    text-align: left;
+    --pos: 116 / 129;
   }
 
   .timeline__marker:nth-child(5) {
-    --pos: 128;
+    --pos: 121;
+  }
+
+  .timeline__event:nth-child(6) {
+    --pos: 130 / 140;
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .timeline__marker:nth-child(6) {
+    --pos: 131;
   }
 
   .timeline__dates,
